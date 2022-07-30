@@ -1,109 +1,11 @@
 <app-barra-navegacion></app-barra-navegacion>
-  
-<div class="card mat-card" id="first-card">  
-<div id="profile-background"> <img src="../assets/imgs/pngtree-abstract-background-image_298809.jpg"></div>
-<div id="info" style="padding: 16px">                   
-    <div id="info-img">
-        <img class="profile-img" src="../assets/imgs/-mgwcz9.jpg">
-        <div class="btn-edit"><a href="#" class="btn-right"> <i class="fa fa-pen"></i></a></div>
-    </div>
-    <div id="info-data">
-        <div>
-            <h1>Belen Cruz</h1>
-            <div id="info-company">Full Stack Developer Jr</div>
-            <div id="info-contact">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg>   
-                <span> Córdoba, Argentina </span>
-                <span> <a href="#"> Informacion de Contacto </a> </span>
-            </div>
-        </div>
-        <div id="info-actions">
-            <button class="btn btn-primary" type="button">Tengo interés en</button>
-            <button class="btn btn-light" type="button">Añadir sección</button>
-            <button class="btn btn-light" type="button">Más</button>
-        </div>
-    </div>
-</div>
-</div>
-<div class="card mat-card">            
-    <h2>Acerca de</h2>
-    <div class="btn-edit" onclick="cambiar_parrafo()">
-        <a href="#" class="btn-right"> 
-            <i class="fa fa-pen"></i>
-        </a>
-        <p id="text-acercade">Me encuentro capacitandome como
-            Desarrolladora Full Stack, y aprendiendo nuevas
-            tecnologías continuamente. Me encanta
-            aprender cosas nuevas día a día en un lugar que
-            siempre me apasiono como es el de la
-            tecnología. Mas de 12 años de experiencia
-            laboral en relación de dependencia me
-            enseñaron a ser organizada, metódica y
-            proactiva.</p>
-    </div>    
-    <div>
-        <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
-    </div>            
-</div>   
-<div class="card mat-card">                    
-            <h2>Experiencia</h2>
-            <div class="btn-edit" onclick="cambiar_parrafo()">
-                <a href="#" class="btn-right"> 
-                    <i class="fa fa-pen"></i>
-                </a>
-            </div>
-            <div>
-                <input id="edit-exp1" type="text" oninput="myFunction3(this.value)" style="display:none">
-            </div>
-             <ul id="info-details text-exp1">                                                
-            <div class="row"> 
-                <div class="col-md-4"><h3>Escribania Trento</h3>
-                <p >Desde 03/2017 hasta el presente, realizando tareas de secretariado notarial, manejo de cuentas corrientes, caja y pagos</p>
-                
-                
-                </div>
-                <div class="col-md-4"><h3>Escribania Maluf</h3>
-                <p>Desde 03/2008 hasta el 10/2015, realizando tareas de secretariado notarial, manejo de cuentas corrientes, caja y pagos</p>
-                
-                </div>
-                <div class="col-md-4"><h3>Ski Butternut</h3>
-                <p>Desde 12/2004 hasta el 03/2005, pasantía realizada en Great Barrington, Massachusetts, EEUU, por medio del programa Work&Travel</p>
-                </div>
-            
-            </div>
-        </ul>
-       
-</div>                    
-<div class="card mat-card">
-        <h2>Educacion</h2>
-        <ul id="info-edu">
-            <div class="btn-edit"><a href="#" class="btn-right"> <i class="fa fa-pen"></i></a>
-            </div>  
-            <div class="row">                                                
-                <li>
-                    <a href="#">    
-                    <div class="col-md-6">
-                        <img src="https://www.ies21.edu.ar/img/logo-ies-chico.png" alt="ies" width="100px">
-                        <p>Carrera de Diseño Gráfico, cursado desde 03/2010 al 06/2012, con 22 materias aprobadas, y 28 materias cursadas</p>                               
-                    </div></a>
-                
-                </li>
-                <li>
-                    <a href="#"> 
-                    <div class="col-md-6">
-                    <img src="https://www.ucc.edu.ar/portal2015/UniversidadCatolica/images/logo-ucc-2018.svg" alt="ucc" width="170px">
-                    <p>Carrera de Administración de Empresas, cursado desde el 03/2001 al 11/2004, con 13 materias aprobadas</p>
-                    </div></a>
-                                            
-               
-                </li>                        
-            </div>
-        </ul>
-</div>
+<app-encabezado></app-encabezado>
+<app-acerca-de></app-acerca-de> 
+<app-experiencia></app-experiencia>
+<app-educacion></app-educacion>
+
+
+
 <!-- <circle-progress
   [percent]="85"
   [radius]="100"

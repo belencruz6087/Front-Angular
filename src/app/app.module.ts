@@ -7,12 +7,22 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BarraNavegacionComponent } from './componentes/barra-navegacion/barra-navegacion.component';
+import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
    
-    BarraNavegacionComponent
+    BarraNavegacionComponent,
+        EncabezadoComponent,
+        AcercaDeComponent,
+        ExperienciaComponent,
+        EducacionComponent,
+        SkillsComponent
   ],
   imports: [
     BrowserModule,
