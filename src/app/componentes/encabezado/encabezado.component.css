@@ -5,3 +5,6 @@
     border-color: var(--primario);
     background-color: var(--grisclaro);
 }
+.btn-edit{
+    align-items: flex-end;
+}

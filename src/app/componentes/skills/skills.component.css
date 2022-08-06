@@ -1,3 +1,11 @@
+.mat-card{
+    border-radius: 30px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: var(--primario);
+    background-color: var(--grisclaro);
+}
+
 .grafico-barras{
     display:block;
     width: 600px;

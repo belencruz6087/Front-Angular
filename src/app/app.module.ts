@@ -11,26 +11,34 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { GraficoBarraComponent } from './componentes/grafico-barra/grafico-barra.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    
+    AppComponent,    
     BarraNavegacionComponent,
     EncabezadoComponent,
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
     SkillsComponent,
-    FooterComponent
+    FooterComponent,
+    IniciarSesionComponent,
+    GraficoBarraComponent,
+    PortfolioComponent
         
   ],
   imports: [
     BrowserModule,    
     FontAwesomeModule,
     HttpClientModule,
-   
+    RouterModule,    
     NgCircleProgressModule.forRoot({
       
       radius: 100,
@@ -40,7 +48,9 @@ import { HttpClientModule} from '@angular/common/http'
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
       showSubtitle: false,     
-    })
+    }), AppRoutingModule,
+      ReactiveFormsModule,
+    
  
   ],
 

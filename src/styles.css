@@ -5,11 +5,12 @@
     --rosa: #cc3668;
     --secundario: #f3dc74;
     --gris: #757575;
-    --grisclaro: #dfe9f3;
+    --grisclaro: #c6ccd4;
+    --grisoscuro: #888a8b;
     --fuentePrincipal: "Montserrat";
     --fuenteSecundaria: "Square Peg";
-
 }
+
 
 body{
     background-color: var(--grisclaro); 
@@ -83,14 +84,7 @@ div#profile-background img{
     justify-content: space-between;
     width: 100px;
 }
-.grafico-barras{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 80%; 
-    margin-bottom: 20px;   
-}
+
 
 .graficos{
     padding: 100px;
@@ -100,7 +94,9 @@ div#profile-background img{
     padding: 30px;
 }
 
-
-.footer {
+.footer{
     text-align: center;
+}
+.p{
+    font-size: 10px;
 }

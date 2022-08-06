@@ -1,20 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from 'chart.js'
-import { NgCircleProgressModule } from 'ng-circle-progress';
+import { Chart, ChartType} from 'chart.js'
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  selector: 'app-grafico-barra',
+  templateUrl: './grafico-barra.component.html',
+  styleUrls: ['./grafico-barra.component.css']
 })
-export class SkillsComponent implements OnInit {
-
-  
+export class GraficoBarraComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {    
-       
+  ngOnInit(): void {
+
     var chart = new Chart('myChart-Bar', {
       type: 'bar',
       data: {
@@ -51,3 +48,7 @@ export class SkillsComponent implements OnInit {
   }
 
 }
+
+
+
+
